@@ -25,7 +25,6 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
-apply plugin: 'net.saliman.cobertura'
 apply plugin: 'jacoco'
 
 sonarqube {
