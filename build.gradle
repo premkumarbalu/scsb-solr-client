@@ -103,11 +103,6 @@ eclipse {
 	}
 }
 
-jacoco {
-	toolVersion = "0.7.9"
-	reportsDir = file("$buildDir/customJacocoReportDir")
-}
-
 test {
 	jacoco {
 		append = false
