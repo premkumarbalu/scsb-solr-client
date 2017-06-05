@@ -38,6 +38,10 @@ sonarqube {
 	}
 }
 
+springBoot {
+	executable = true
+}
+
 //added to accept systemproperties while executing gradlew test cmd
 test {
 	systemProperties = System.properties
