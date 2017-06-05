@@ -99,6 +99,19 @@ eclipse {
 	}
 }
 
+jacoco {
+	toolVersion = "0.7.9"
+	reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+test {
+	jacoco {
+		append = false
+		destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+		classDumpFile = file("$buildDir/jacoco/classpathdumps")
+	}
+}
+
 jacocoTestReport {
 	group = "Reporting"
 	reports {
